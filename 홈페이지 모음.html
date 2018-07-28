@@ -15,25 +15,40 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="button" value="야간" onclick="
-  var target = document.querySelector('body');
-  if(this.value === '야간'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = '주간';
-  } else{
+  <input type="button" value="야간"
+  onclick="
+    var target = document.querySelector('body');
+    if(this.value === '야간'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = '주간';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'powderblue';
+        i = i + 1;
+      }
+  } else {
     target.style.backgroundColor = 'white';
     target.style.color = 'black';
     this.value = '야간';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'blue';
+      i = i + 1;
     }
-    ">
+  }
+">
   <h1><a href="daesung5class.html" style="text-decoration:none;"><div style="color:pink;">1학년 5반</div> <div style="color:skyblue">커뮤니티</div></a></h1>
 <div id="grid">
-  <ol>
-    <li><strong><a href="홈페이지 모음.html" class="saw" id="activate">홈페이지 모음</a></strong></li>
-    <li><strong><a href="수행평가 게시판.html" class="saw">수행평가 게시판</a></strong></li>
-    <li><strong><a href="자유 게시판.html" class="saw">자유 게시판</a></strong></li>
-  </ol>
+  <ul>
+    <li><strong><a href="홈페이지 모음.html" id="activate">홈페이지 모음</a></strong></li>
+    <li><strong><a href="수행평가 게시판.html">수행평가 게시판</a></strong></li>
+    <li><strong><a href="자유 게시판.html">자유 게시판</a></strong></li>
+  </ul>
   <div id="article">
   <p><a href="http://daeseong.hs.kr/" target="blank" class="saw">학교 홈페이지</a></p>
   <p><a href="https://daeseong.riroschool.kr/" target="blank" class="saw">대성 리로스쿨</a></p>

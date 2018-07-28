@@ -1,14 +1,8 @@
-.saw{
-  color: gray;
-}
 #activate{
   color: red;
 }
 body{
   margin:0;
-}
-.saw{
-  color: gray;
 }
 h1{
   font-size: 45px;
@@ -17,7 +11,7 @@ h1{
   padding: 20px;
   margin: 0;
 }
-ol{
+ul{
   border-right: 1px solid gray;
   width: 120px;
   margin: 0;
@@ -26,7 +20,7 @@ ol{
 #grid{
      display: grid;
      grid-template-columns: 150px 1fr;}
-#grid ol{
+#grid ul{
   padding-left: 33px;
 }
 #grid #article{
